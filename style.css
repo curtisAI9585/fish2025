@@ -1,4 +1,4 @@
-/* WordPress/Elementor Original Styles */
+/* 基本樣式重置 */
 * {
     margin: 0;
     padding: 0;
@@ -12,49 +12,37 @@ body {
     background-color: #ffffff;
 }
 
-/* Elementor Container Styles */
-.elementor {
+/* 主容器樣式 */
+.main-container {
     width: 100%;
-}
-
-.elementor-element {
-    position: relative;
-}
-
-.e-con {
-    display: flex;
-    flex-direction: column;
-}
-
-.e-con-boxed {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.e-con-inner {
+/* 圖片容器樣式 */
+.image-container {
     width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px 0;
 }
 
-.e-flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.e-parent {
-    margin-bottom: 20px;
-}
-
-/* Widget Styles */
-.elementor-widget-container {
-    width: 100%;
-}
-
-.elementor-widget-image img {
+.main-image {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 內容容器樣式 */
+.content-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Facebook-style content containers */
@@ -128,6 +116,10 @@ h3 {
     color: #800080 !important;
 }
 
+[style*="color: #ff6600"] {
+    color: #ff6600 !important;
+}
+
 /* Links */
 a {
     color: #0000ff;
@@ -147,11 +139,6 @@ a:hover {
 .size-full {
     max-width: 100%;
     height: auto;
-}
-
-.wp-image-11327 {
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Info icons */
@@ -182,10 +169,16 @@ strong {
     text-decoration: underline;
 }
 
-/* Responsive design */
+/* 響應式設計 */
 @media (max-width: 768px) {
-    .e-con-boxed {
+    .main-container,
+    .content-container {
         padding: 0 16px;
+    }
+    
+    .image-container {
+        margin-bottom: 20px;
+        padding: 15px 0;
     }
     
     .xat24cr {
@@ -199,15 +192,17 @@ strong {
     h3 {
         font-size: 18px;
     }
-    
-    .wp-image-11327 {
-        margin: 12px auto;
-    }
 }
 
 @media (max-width: 480px) {
-    .e-con-boxed {
+    .main-container,
+    .content-container {
         padding: 0 12px;
+    }
+    
+    .image-container {
+        margin-bottom: 15px;
+        padding: 10px 0;
     }
     
     .xat24cr {
@@ -223,27 +218,9 @@ strong {
     }
 }
 
-/* WordPress specific classes */
-.page-template-elementor_canvas {
-    margin: 0;
-    padding: 0;
-}
-
-.elementor-default {
-    font-family: 'Roboto', Arial, sans-serif;
-}
-
-.elementor-template-canvas {
-    background-color: #ffffff;
-}
-
-/* Additional spacing */
-.elementor-element-a939980 {
-    margin-bottom: 0;
-}
-
-.elementor-element-4665b8e {
-    text-align: center;
+/* 確保圖片與內容之間有適當間距 */
+.image-container + .content-container {
+    margin-top: 0;
 }
 
 /* Non-breaking space handling */
