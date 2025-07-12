@@ -1,0 +1,253 @@
+/* WordPress/Elementor Original Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+}
+
+/* Elementor Container Styles */
+.elementor {
+    width: 100%;
+}
+
+.elementor-element {
+    position: relative;
+}
+
+.e-con {
+    display: flex;
+    flex-direction: column;
+}
+
+.e-con-boxed {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.e-con-inner {
+    width: 100%;
+}
+
+.e-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.e-parent {
+    margin-bottom: 20px;
+}
+
+/* Widget Styles */
+.elementor-widget-container {
+    width: 100%;
+}
+
+.elementor-widget-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Facebook-style content containers */
+.x11i5rnm {
+    margin-bottom: 20px;
+}
+
+.xat24cr {
+    padding: 16px;
+}
+
+.x1mh8g0r {
+    background-color: #ffffff;
+}
+
+.x1vvkbs {
+    border-radius: 8px;
+}
+
+.xtlvy1s {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.x126k92a {
+    border: 1px solid #e4e6ea;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+/* Text alignment */
+[style*="text-align: center"] {
+    text-align: center !important;
+}
+
+/* Color styles */
+[style*="color: #ff0000"] {
+    color: #ff0000 !important;
+}
+
+[style*="color: #0000ff"] {
+    color: #0000ff !important;
+}
+
+[style*="color: #9521ed"] {
+    color: #9521ed !important;
+}
+
+[style*="color: #ff00ff"] {
+    color: #ff00ff !important;
+}
+
+[style*="color: #3366ff"] {
+    color: #3366ff !important;
+}
+
+[style*="color: #800080"] {
+    color: #800080 !important;
+}
+
+/* Links */
+a {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #0066cc;
+}
+
+/* Images */
+.alignnone {
+    display: block;
+    margin: 16px auto;
+}
+
+.size-full {
+    max-width: 100%;
+    height: auto;
+}
+
+.wp-image-11327 {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Info icons */
+.info-icon {
+    font-size: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Content spacing */
+div[dir="auto"] {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+div[dir="auto"]:last-child {
+    margin-bottom: 0;
+}
+
+/* Strong text */
+strong {
+    font-weight: 600;
+}
+
+/* Email protection */
+.__cf_email__ {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .e-con-boxed {
+        padding: 0 16px;
+    }
+    
+    .xat24cr {
+        padding: 12px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    .wp-image-11327 {
+        margin: 12px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .e-con-boxed {
+        padding: 0 12px;
+    }
+    
+    .xat24cr {
+        padding: 8px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    h3 {
+        font-size: 16px;
+    }
+}
+
+/* WordPress specific classes */
+.page-template-elementor_canvas {
+    margin: 0;
+    padding: 0;
+}
+
+.elementor-default {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.elementor-template-canvas {
+    background-color: #ffffff;
+}
+
+/* Additional spacing */
+.elementor-element-a939980 {
+    margin-bottom: 0;
+}
+
+.elementor-element-4665b8e {
+    text-align: center;
+}
+
+/* Non-breaking space handling */
+div[dir="auto"]:empty::before {
+    content: "\00a0";
+    visibility: hidden;
+}
